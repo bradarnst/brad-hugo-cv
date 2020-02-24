@@ -1,37 +1,73 @@
 <!DOCTYPE html>
-    {{ partial "lang.html" . }}
+
+<html lang="{{ .Site.LanguageCode }}">
+
 <head>
+
     {{ partial "head.html" . }}
+
 </head>
 
 <body>
-    <div class="wrapper">
 
-    {{ partial "sidebar.html" . }}
+    <div class="main-wrapper">
 
-	<div class="main-wrapper">
+        <div class="container px-3 px-lg-5">
 
-    {{ if .Site.Params.summary.enable }}
-	{{ partial "summary.html" . }}
-    {{ end }}
+            <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
 
-    {{ if .Site.Params.experiences.enable }}
-    {{ partial "experiences.html" . }}
-    {{ end }}
+                {{ partial "header.html" . }}
 
-    {{ if .Site.Params.projects.enable }}
-    {{ partial "projects.html" . }}
-    {{ end }}
+                <hr>
 
-    {{ if .Site.Params.skills.enable }}
-	{{ partial "skills.html" . }}
-    {{ end }}
+                {{ if .Site.Params.summary.enable }}
+                {{ partial "summary.html" . }}
+                {{ end }}
 
-	</div><!--//main-body-->
-    </div>
+                <hr>
 
-	{{ partial "footer.html" . }}
+                <div class="resume-body">
+
+                    <div class="row">
+
+                        <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+
+                            {{ if .Site.Params.experience.enable }}
+                            {{ partial "experience.html" . }}
+                            {{ end }}
+
+                            {{ if .Site.Params.projects.enable }}
+                            {{ partial "projects.html" . }}
+                            {{ end }}
+
+                            {{ if .Site.Params.information.enable }}
+                            {{ partial "information.html" . }}
+                            {{ end }}
+
+                        </div><!--//resume-main-->
+
+                        {{ partial "sidebar.html" . }}
+
+                    </div><!--//row-->
+
+                </div><!--//resume-body-->
+
+                <hr>
+
+                {{ if .Site.Params.social.enable }}
+                {{ partial "social.html" . }}
+                {{ end }}
+
+            </article>
+
+        </div><!--//container-->
+
+        {{ partial "footer.html" . }}
+
+    </div><!--//main-wrapper-->
 
     {{ partial "scripts.html" . }}
+
 </body>
+
 </html>

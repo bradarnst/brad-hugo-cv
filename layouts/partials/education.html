@@ -1,10 +1,16 @@
-            <div class="education-container container-block">
-                <h2 class="container-block-title">{{ i18n "education" }}</h2>
-				{{ range .Site.Params.education.list }}
-                <div class="item">
-                    <h4 class="degree">{{ .degree }}</h4>
-                    <h5 class="meta">{{ .college }}</h5>
-                    <div class="time">{{ .dates }}</div>
-                </div><!--//item-->
-				{{ end }}
-            </div><!--//education-container-->
+
+                            <section class="education-section py-3">
+
+                                <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "education" }}</h3>
+
+                                <ul class="list-unstyled resume-education-list">
+                                    {{ range .Site.Params.education.list }}
+                                    <li class="mb-3">
+                                        <div class="resume-degree font-weight-bold">{{ .degree }}</div>
+                                        <div class="resume-degree-org text-muted">{{ .university }}</div>
+                                        <div class="resume-degree-time text-muted">{{ .dates }}</div>
+                                    </li>
+                                    {{ end }}
+                                </ul>
+
+                            </section><!--//education-section-->

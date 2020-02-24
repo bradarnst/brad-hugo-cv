@@ -1,11 +1,18 @@
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa {{ .Site.Params.projects.icon }}"></i>{{ i18n "projects" }}</h2>
-                <div class="intro">
-                    <p>{{ with .Site.Params.projects.intro }}{{ . | markdownify }}{{ end }}</p>
-                </div><!--//intro-->
-				{{ range .Site.Params.projects.list }}
-                <div class="item">
-                    <span class="project-title"><a href="{{ .url }}">{{ .title }}</a></span> - <span class="project-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span>
-                </div><!--//item-->
-				{{ end }}
-            </section><!--//section-->
+
+                            <section class="project-section py-3">
+
+                                <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "projects" }}</h3>
+
+                                {{ range .Site.Params.projects.list }}
+                                <div class="item mb-3">
+                                    <div class="item-heading row align-items-center mb-2">
+                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">{{ .title }}</h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">{{ .meta }}</div>
+                                    </div>
+                                    <div class="item-content">
+                                        <p>{{ .tagline }}</p>
+                                    </div>
+                                </div><!--//item-->
+                                {{ end }}
+
+                            </section><!--//project-section-->

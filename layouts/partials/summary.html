@@ -1,6 +1,16 @@
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa {{ .Site.Params.summary.icon }}"></i>{{ i18n "summary" }}</h2>
-                <div class="summary">
-                    <p>{{ with .Site.Params.summary.summary }}{{ . | markdownify }}{{ end }}</p>
-                </div><!--//summary-->
-            </section><!--//section-->
+
+                <div class="resume-intro py-3">
+
+                    <div class="media flex-column flex-md-row align-items-center">
+
+                        {{ if .Site.Params.profile.avatar }}
+                        <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="{{ .Site.BaseURL }}assets/images/{{ .Site.Params.profile.avatar }}" alt="image">
+                        {{ end }}
+
+                        <div class="media-body text-left">
+                            <p class="mb-0">{{ with .Site.Params.summary.text }}{{ . | markdownify}}{{end}}</p>
+                        </div><!--//media-body-->
+
+                    </div>
+
+                </div><!--//resume-intro-->
