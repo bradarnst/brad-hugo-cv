@@ -1,10 +1,10 @@
 # Page settings
 
-baseurl = "http://cv.nexusseven.com"
+baseurl = "https://cv.nexusseven.com/"
 languageCode = "en"
 title = "Brad Arnst"
 theme = "devresume"
-googleAnalytics = "UA-XXXXXXX-Y"
+#googleAnalytics = "UA-XXXXXXX-Y"
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true
@@ -48,12 +48,12 @@ disable404 = true
 
         [[params.contact.list]]
         icon = "fa fa-globe"
-        url = "http://cv.nexusseven.com"
+        url = "https://cv.nexusseven.com"
         text = "cv.nexusseven.com"
 
         [[params.contact.list]]
         icon = "fa fa-file-download"
-        url = "http://cv/nexusseven.com/bradcv.pdf"
+        url = "https://cv.nexusseven.com/bradcv.pdf"
         text = "Download CV"
 
     # Education section
@@ -76,16 +76,16 @@ disable404 = true
         university = "fecund training"
 
     # Languages section
-    [params.language]
+    [params.languages]
         enable = true
         title = "Languages"
 
-        [[params.language.list]]
+        [[params.languages.list]]
         name = "English"
         level = "Native"
 
-        [[params.language.list]]
-        ame = "French"
+        [[params.languages.list]]
+        name = "French"
         level = "Starter"
 
     # Interests section
@@ -103,6 +103,10 @@ disable404 = true
 
         [[params.interests.list]]
         name = "Cooking"
+
+        [[params.interests.list]]
+        name = "Photography"
+
 
 # Main body sections
 
@@ -131,10 +135,11 @@ disable404 = true
         title = "Enterprise Architect & Engineering Manager"
         dates = "Sep 2019 - Present"
         company = "Buildit @ Wipro Digital \u2014 London, UK"
-        details = """As **Enterprise Architect** responsible for architecture and strategy consulting for clients and within Wipro Digital. Buildit is a talented, highly-performing team within Wipro Digital. \
-        Areas of responsibilities include: API strategy, digital transformation, enterprise integration, cloud strategy/architecture, devops, digital transformation, engineering transformation and agile ways of working.\n\nAs **Engineering Manager** responsible for mentoring Buildit and Wipro Digital engineering teams, consulting on engineering transformation with clients and within Wipro Digital. Introducing and refining ways of working, systems thinking, and a modern, digital approach.\n\n\
+        details = """As **Enterprise Architect** responsible for architecture and strategy consults for clients and within Wipro Digital. Buildit is a talented, highly-performing team within Wipro Digital. \
+        Areas of responsibilities include: API strategy, digital transformation, enterprise integration, cloud strategy/architecture, devops, digital transformation, engineering transformation and agile ways of working.\n\n\
+        As **Engineering Manager** responsible for mentoring Buildit and Wipro Digital engineering teams, consulting on engineering transformation with clients and within Wipro Digital. Introducing and refining ways of working, creative thinking, and modern, digital approaches.\n\n\
         Clients include: Lloyds Banking Group, UBS, Repsol\n\n\
-        • architecture • manage • lead • AWS • Azure • strategy • Jira • devops • agile • scrum • API • REST • cloud • transformation • CI/CD pipeline • UML • serverless • Docker • Kubernetes • JAMstack • SaaS • IaC • consulting •
+        • AWS • Azure • UML • Jira • devops • agile • scrum • API • REST • cloud • transformation • CI/CD pipeline • UML • serverless • Docker • Kubernetes • JAMstack • SaaS • IaC • consulting •
         """
 
         [[params.experience.list]]
@@ -148,7 +153,7 @@ disable404 = true
         title = "Lead Enterprise Architect"
         dates = "Dec 2017 - Sep 2018"
         company = "10x (via EB) \u2014 London, UK"
-        details = """As **Lead Enterprise Architect** responsible for defining architectural concepts, and patterns for the 10x Platform and Virgin Money Digital Bank. Primary responsibilities include API strategy, API design, API management, integration within 10x and with external services and partners. 10x and Vigin Money were building a modern, bespoke digital banking platform using microservices architecture on AWS cloud native.\n\n\
+        details = """As **Lead Enterprise Architect** responsible for architectural concepts and patterns. Primary responsibilities include API strategy, API design, API management, integration within 10x and with external services and partners. 10x and (main investor) Vigin Money were building a modern, bespoke digital banking platform using microservices architecture on AWS cloud native.\n\n\
         • enterprise architecture • solutions architecture • design • integration architecture • microservices architecture • API design • API strategy • NoSQL data modelling • platform architecture • OpenAPI/Swagger • API security • Apigee Edge • Amazon AWS • OpenID/OAuth • UML • Spring Java microservices • linkerd service mesh •
         """
 
@@ -156,10 +161,10 @@ disable404 = true
         title = "Enterprise Programme Architect"
         dates = "Apr 2016 - Oct 2017"
         company = """Nationwide (via EB) \u2014 Swindon, UK"""
-        details = """As **Enterprise** and **Programme Architect** responsible for defining architectural concepts, and patterns for API Enablement within Nationwide; while ensuring the API Enablement capability aligned with Nationwide’s enterprise architecture, and roadmaps. Responsible for \
-        ensuring the architecture for Nationwide API capabilities were aligned with Open Banking. Responsibility included DevOps platform and testing architecture and best practices for employing APIs: API development life cycle, testing, promotion and DevOps standards in the cloud (Azure) and \
-        on-premises. Solutions Architect for an API project that had severe time pressure, due to CMA regulation mandates: implemented a cloud API platform, designed APIs, data stores, applications, security, operations and support model.\n\n\
-        • enterprise architecture • solutions architecture • design • conceptual architecture • API platform design • test platform architecture • upper management communications • vendor management • Dev Ops platform architecture • API dev life cycle definition and promotion • API security • Apigee Edge (Cloud & Private Cloud) • Microsoft Azure •
+        details = """As **Enterprise** and **Programme Architect** responsible for architectural concepts and patterns for API Enablement and Open Banking. ensuring the architecture aligned with Nationwide’s enterprise architecture roadmaps. \
+        Responsibilities included: DevOps and testing architecture; best practice for employing APIs; API SDLC, cloud standards (Azure). \
+        Solutions Architect for a tactical, API project that had severe time pressure, due to regulatroy mandates. Designed and implemented a cloud API platform, designed APIs, data stores, applications, security, operations and support model.\n\n\
+        • API platform design • test platform architecture • vendor management • Dev Ops platform architecture • API SDLC • API security • Apigee Edge • Microsoft Azure •
         """
 
         [[params.experience.list]]
@@ -184,49 +189,49 @@ disable404 = true
         dates = "2013 - 2014"
         company = "KiwiRail \u2014 Auckland, New Zealand"
         details = """As **Enterprise Architect** provided enterprise architecture, strategy, planning, continuous improvement, design and delivery of solutions. Collaborated with KiwiRail IT architects on life cycle planning, architectural principles, policies and standards. Architected for change.\n\n\
-        As **Lead Architect** on KORMS, a $25M+ multi-year, programme transitioning KiwiRail Freight legacy systems to a new bespoke architecture. Responsibilities: architecture and design of an event-driven, SOA for operations, booking, billing, invoicing, analytics, workflow, task management, logistics, platforms and SSO. Led the technical team and directed many vendor resources.\n\n\
+        As **Lead Architect** on a $25M+ multi-year, programme transitioning KiwiRail Freight legacy systems to a bespoke architecture. Responsibilities: architecture and design of an event-driven, SOA for operations, booking, billing, invoicing, analytics, workflow, task management, logistics, platforms and SSO. Led the technical team and directed many vendor resources.\n\n\
         The programme included: custom development, integration services, platform selection, web, app servers, document storage, security, workflow, rules, graph and NoSQL databases, search, event recording, analytics, audit and infrastructure. Key activities and deliverables include: Design, Architecture, Implementation Planning, Strategy, and Documentation.\n\n\
-        • event-driven • RESTful • Java Spring Framework • TDD • DevOps • continuous deployment • git, maven & Jenkins • Tomcat • Mule ESB integration: SAP, BI, legacy, B2, SaaS, cloud • EAI patterns • UML • Sparx EA • SSO • AD • analytics on CouchDB, Elasticsearch & Kibana • graph database Neo4J • SaaS workflow management • VMWare & GoPivotal • Linux • vendor selection • custom SAP Billing & Invoicing • SharePoint architecture • TOGAF • UML •
+        • REST • Spring Framework • TDD • DevOps • git • maven • Jenkins • Tomcat • Mulesoft integration: • EAI patterns • UML • Sparx EA • SSO • AD • analytics • CouchDB, Elasticsearch • graphdb/Neo4J • SaaS workflow • VMWare • GoPivotal • Linux • custom SAP Billing • SharePoint architecture • TOGAF • UML •
         """
 
         [[params.experience.list]]
         title = "Solutions Architect"
         dates = "2012 - 2013"
         company = "EDF Energy \u2014 London, UK"
-        details = """As **Consulting Principal Architect**. Enterprise Blueprints provides Strategic and Architectural IT Consultation, primarily for financial organisationsAs **Solutions Architect** primarily responsible for project delivery, architecture and design. Also responsible for Enterprise Architecture within B2C, aligning with EDF as a whole. Developed the Solution Architect Roadmap template.\
-        Developed technology and strategic roadmaps for various business objectives, technologies, and BAU. Developed a visual, analytic tool for dynamically displaying maturity and confidence for roadmaps, programmes and larger projects.\n\n\
-        • BI • Analytics • Big Data architecture: SAP, structured, unstructured, semi-structured & smart-meter data sources• Hadoop with SAP HANA • SharePoint B2C SA site • SharePoint architecture • SaaS for BI & Analytics • web SOA (mostly using SAP PI) • SAP – Billing & Finance • SAP – CRM • Pricing • Metering & MOP • Reporting • Business Analytics • Big Data • third-party systems • Digital • SharePoint • Industry & General systems • Telephony • TOGAF •
+        details = """As **Solutions Architect** primarily responsible for project delivery, architecture and design. Also responsible for Enterprise Architecture within B2C, aligning with EDF as a whole. Developed the Solution Architect Roadmap template.\
+        Developed technology and strategic roadmaps for various business objectives, technologies, and BAU. Developed an analytic tool for dynamically displaying maturity and confidence for roadmaps, programmes and projects.\n\n\
+        • BI • Analytics • Big Data architecture: SAP, & smart-meter data sources• Hadoop with SAP HANA • SharePoint architecture and build • BI & Analytics SaaS • SOA • SAP – Billing Finance CRM • Pricing • Metering & MOP • Reporting • Digital • Telephony • TOGAF •
         """
 
         [[params.experience.list]]
-        title = "Senior Infrastructure Architect \u2014 London, UK"
+        title = "Senior Infrastructure Architect"
         dates = "2012"
-        company = "HP"
+        company = "HP \u2014 London, UK"
         details = """As **Senior Infrastructure Architect** for HP, for their BP account, responsible for Data Centre Services (DCS) Architecture at the Global Data Centre Operations/Solutions located in BP Data Centres.\n\n\
         • servers • mid-range • database • web-hosting • middleware • storage • backup • requirements gathering & analysis • governance • high-level & detailed design • QA •
         m"""
 
         [[params.experience.list]]
-        title = "Enterprise Solutions Architect \u2014 London, UK"
+        title = "Enterprise Solutions Architect"
         dates = "2010 - 2012"
-        company = "Xchanging"
+        company = "Xchanging \u2014 London, UK"
         details = """As **Enterprise Solutions Architect** responsible for solutions architecture throughout Xchanging and to external customers; consulting for internal and external business clients; Enterprise Architecture. Primary resource for all security architecture. \
         Developed the solution for a standard desktop for offshore, near-shore and internal employees using hybrid cloud systems. Designed a solution for a SharePoint front-end to provide app delivery, hosting and remote management for offshore and onshore users.\n\n\
         • requirements gathering & analysis • proposals • solution design & documentation • Wintel • Mainframe • Mid-range • Networking • remote desktop (Citrix) • End-User Computing initiative (Gatwick Airport) • strategic technical roadmaps • private & hybrid cloud strategy •
         """
 
         [[params.experience.list]]
-        title = "Enterprise Solutions Architect \u2014 Calgary, Canada"
+        title = "Enterprise Solutions Architect"
         dates = "2008 - 2009"
-        company = "Husky Energy"
+        company = "Husky Energy \u2014 Calgary, Canada"
         details = """As **Enterprise Solutions Architect** for the Enterprise Architecture Team responsible for developing technical roadmaps for Husky’s entire systems infrastructure. Developed the architecture and implementation plan to migrate from Novell systems to Microsoft systems. Developed integration standards for web/SAP (NetWeaver, PI & XI).\n\n\
         • TOGAF • ARIS • SharePoint •
         """
 
         [[params.experience.list]]
-        title = "Enterprise Architect \u2014 Calgary, Canada"
+        title = "Enterprise Architect"
         dates = "2007 - 2008"
-        company = "FortisAlberta Inc."
+        company = "FortisAlberta Inc. \u2014 Calgary, Canada"
         details = """As **Enterprise Architect** responsible for developing Fortis Alberta’s enterprise architecture and solution architecture for major projects. Developed technology and security roadmaps, ensuring all were aligned with business vision and objectives.\n\n\
         • AD • security • content-filtering • DR data centre design • virtualization • web server • storage • database consolidation • SQL Server • Oracle RAC • HA & clustering • Citrix Access Gateway • remote access • WAN optimization • server consolidation • SAP • web services integration: BizTalk, NetWeaver & MQSeries • partner network rationalization • SharePoint • TOGAF • ARIS •
         """
@@ -269,8 +274,8 @@ disable404 = true
         title = "Senior Architect & Interim IT Manager"
         dates = "2001 -  2003"
         company = "Foothills Pipe Lines \u2014 Calgary, Canada"
-        details = """As **Senior Architect** and **Interim IT Manager** developed and refined architecture, procedures and standards. Responsible for management of technical resources. Developed technology roadmaps. Brought on as an Architect; also took on the Manager role for several months.\n\n\
-        • network • servers • desktop • apps • security • DR • Exchange •firewalls • NetApp storage • SMS • web • monitoring • change control • Linux • SCO • HPUX • AD • DNS • Exchange • SMTP • SQL Server • Agresso • backup • recovery •
+        details = """As **Senior Architect** and **Interim IT Manager** developed and refined architecture, procedures and standards. Responsible for management of technical resources. Developed technology roadmaps.\n\n\
+        • network • servers • desktop • apps • security • DR • Exchange •firewalls • NetApp • SMS • web • monitoring • change control • Linux • HPUX • AD • DNS • Exchange • SMTP • SQL Server • Agresso • backup •
         """
 
         [[params.experience.list]]
@@ -293,12 +298,17 @@ disable404 = true
         enable = true
         icon = "fa-archive"
         title = "Projects"
-        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+        intro = "Some things I'm working on..."
 
         [[params.projects.list]]
-        title = "Hugrid"
-        url = "https://github.com/aerohub/hugrid"
-        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+        title = "Static CV website"
+        meta = "Static websites. Github. Hugo. JAMstack."
+        url = "https://github.com/bradarnst/brad-hugo-cv"
+        tagline = """[brad-hugo-cv](https://github.com/bradarnst/brad-hugo-cv) \u2014 project for developing, building and deploying this CV.\n\n\
+        This is a static website, using Hugo at static website generator. It's a serverless, static website using Amazon AWS - S3. See the [README.md](https://github.com/bradarnst/brad-hugo-cv/blob/master/README.md) for more information.\
+        """
+        
+        
 
     # Skills section
     [params.skills]
@@ -309,33 +319,42 @@ disable404 = true
         [[params.skills.list]]
         title = "Technical"
         [[params.skills.list.items]]
-        details = " hands-on, team leadership, design, enterprise architecture, devops, operations, management, projects, SDLC, agile methodologies and ways of working"
+        details = "Architecture: Enterprise, Solutions, Infrastructure, Integration, Technology, Software."
         [[params.skills.list.items]]
-        details = "Python/Ruby/PHP"
+        details = "High-level and low-level design of cloud, systems, platforms, services, software., devops, operations, "
         [[params.skills.list.items]]
-        details = "Node.js/ASP.NET"
+        details = "Devops, infrastructure as code, code pipelines, CI/CD."
         [[params.skills.list.items]]
-        details = "PostgreSQL/MySQL"
+        details = "Project management, SDLC, agile methodologies and ways of working."
         [[params.skills.list.items]]
-        details = "Object-oriented design"
+        details = "Design/Architecture documentation, UML, UML diagrams as code, Sparx, Visual Paradigm."
         [[params.skills.list.items]]
-        details = "Design and implement database structures"
+        details = "Data modeling, database design, SQL, NoSQL, graph, data cache, data streaming."
         [[params.skills.list.items]]
-        details = "Lead and deliver complex software systems"
+        details = "API strategy, design, modeling, management, SDLC, best practice, API First, Swagger, OpenAPI."
+        [[params.skills.list.items]]
+        details = "Microservices architecure/patterns, REST, event-driven, domain driven."
+        [[params.skills.list.items]]
+        details = "Integration, Enterprise Integration Patterns, messaging, data streams, ESB."
+        [[params.skills.list.items]]
+        details = "Big Data, analytics, BI, search, Elasticsearch."
+        [[params.skills.list.items]]
+        details = "Cloud. AWS. Azure. Google Cloud."
+
 
         [[params.skills.list]]
         title = "Professional"
         [[params.skills.list.items]]
-        details = "Effective communication"
+        details = "Engineering leader, management, mentor."
         [[params.skills.list.items]]
-        details = "Team player"
+        details = "Consulting"
         [[params.skills.list.items]]
-        details = "Strong problem solver"
+        details = "Presentations"
         [[params.skills.list.items]]
-        details = "Good time management"
+        details = "C-Level Engagement"
 
         [params.information]
-        enable = true
+        enable = false
 
         [[params.information.list]]
         title = "Papers"
@@ -346,7 +365,7 @@ disable404 = true
 
         [[params.information.list]]
         title = "Interests"
-        details = "Climbing, Snowboarding, Photography, Travelling"
+        details = "Mushroom Foraging[link](https://www.example.com), Snowboarding, Photography, Travelling"
 
         [params.social]
         enable = true
@@ -368,7 +387,7 @@ disable404 = true
 
         [[params.social.list]]
         icon = "fa fa-file-download"
-        url = "http://cv.nexusseven.com/bradcv.pdf"
+        url = "https://cv.nexusseven.com/bradcv.pdf"
         title = "Download My CV"
 
 
@@ -382,6 +401,6 @@ disable404 = true
     # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
 
     [params.footer]
-        copyright = """ """
+        copyright = ""
 
 
