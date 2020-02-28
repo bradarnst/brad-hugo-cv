@@ -4,7 +4,7 @@ baseurl = "https://cv.nexusseven.com/"
 languageCode = "en"
 title = "Brad Arnst"
 theme = "devresume"
-#googleAnalytics = "UA-XXXXXXX-Y"
+googleAnalytics = "UA-159085083-1"
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true
@@ -14,7 +14,8 @@ disable404 = true
 [params]
 
 # Meta
-    description = "Brad Arnst Default CV"
+    enable = "true"
+    description = "Brad Arnst CV"
     author = "Brad Arnst"
 
     #primaryColor = "#54B689"
@@ -41,10 +42,10 @@ disable404 = true
         url = "mailto://brad@nexusseven.com"
         text = "brad@nexusseven.com"
 
-        [[params.contact.list]]
-        icon = "fa fa-phone"
-        url = "tel:+44-079-4567-890"
-        text = "+44 1234567890"
+        #[[params.contact.list]]
+        #icon = "fa fa-phone"
+        #url = "tel:+44-079-4567-890"
+        #text = "+44 1234567890"
 
         [[params.contact.list]]
         icon = "fa fa-globe"
@@ -53,7 +54,7 @@ disable404 = true
 
         [[params.contact.list]]
         icon = "fa fa-file-download"
-        url = "https://cv.nexusseven.com/bradcv.pdf"
+        url = "https://cv.nexusseven.com/assets/bradcv.pdf"
         text = "Download CV"
 
     # Education section
@@ -302,9 +303,9 @@ disable404 = true
 
         [[params.projects.list]]
         title = "Static CV website"
-        meta = "Static websites. Github. Hugo. JAMstack."
+        meta = "Static websites. Github. Hugo. JAMstack. AWS. CDN."
         url = "https://github.com/bradarnst/brad-hugo-cv"
-        tagline = """[brad-hugo-cv](https://github.com/bradarnst/brad-hugo-cv) \u2014 project for developing, building and deploying this CV.\n\n\
+        tagline = """[brad-hugo-cv](https://github.com/bradarnst/brad-hugo-cv) \u2014 link to Github repo. A project to develop, building and deploy this CV.\n\n\
         This is a static website, using Hugo at static website generator. It's a serverless, static website using Amazon AWS - S3. See the [README.md](https://github.com/bradarnst/brad-hugo-cv/blob/master/README.md) for more information.\
         """
         
@@ -387,7 +388,7 @@ disable404 = true
 
         [[params.social.list]]
         icon = "fa fa-file-download"
-        url = "https://cv.nexusseven.com/bradcv.pdf"
+        url = "https://cv.nexusseven.com/assets/bradcv.pdf"
         title = "Download My CV"
 
 
