@@ -302,11 +302,11 @@ disable404 = true
         intro = "Some things I'm working on..."
 
         [[params.projects.list]]
-        title = "Static CV website"
+        title = "Static website CV"
         meta = "Static websites. Github. Hugo. JAMstack. AWS. CDN."
         url = "https://github.com/bradarnst/brad-hugo-cv"
         tagline = """[brad-hugo-cv](https://github.com/bradarnst/brad-hugo-cv) \u2014 link to Github repo. A project to develop, building and deploy this CV.\n\n\
-        This is a static website, using Hugo at static website generator. It's a serverless, static website using Amazon AWS - S3. See the [README.md](https://github.com/bradarnst/brad-hugo-cv/blob/master/README.md) for more information.\
+        This is a static website, using Hugo\u2014a static website generator. It's a serverless, secure, static website. It runs on Amazon AWS, using S3 as the storage/website and Amazon CloudFront for CDN. See the [README.md](https://github.com/bradarnst/brad-hugo-cv/blob/master/README.md) for more information.\
         """
         
         
@@ -318,41 +318,56 @@ disable404 = true
         title = "Skills & Proficiency"
 
         [[params.skills.list]]
-        title = "Technical"
-        [[params.skills.list.items]]
-        details = "Architecture: Enterprise, Solutions, Infrastructure, Integration, Technology, Software."
-        [[params.skills.list.items]]
-        details = "High-level and low-level design of cloud, systems, platforms, services, software., devops, operations, "
-        [[params.skills.list.items]]
-        details = "Devops, infrastructure as code, code pipelines, CI/CD."
-        [[params.skills.list.items]]
-        details = "Project management, SDLC, agile methodologies and ways of working."
-        [[params.skills.list.items]]
-        details = "Design/Architecture documentation, UML, UML diagrams as code, Sparx, Visual Paradigm."
-        [[params.skills.list.items]]
-        details = "Data modeling, database design, SQL, NoSQL, graph, data cache, data streaming."
-        [[params.skills.list.items]]
-        details = "API strategy, design, modeling, management, SDLC, best practice, API First, Swagger, OpenAPI."
-        [[params.skills.list.items]]
-        details = "Microservices architecure/patterns, REST, event-driven, domain driven."
-        [[params.skills.list.items]]
-        details = "Integration, Enterprise Integration Patterns, messaging, data streams, ESB."
-        [[params.skills.list.items]]
-        details = "Big Data, analytics, BI, search, Elasticsearch."
-        [[params.skills.list.items]]
-        details = "Cloud. AWS. Azure. Google Cloud."
-
-
-        [[params.skills.list]]
         title = "Professional"
         [[params.skills.list.items]]
-        details = "Engineering leader, management, mentor."
+        details = "Engineering lead, manage, mentor."
         [[params.skills.list.items]]
         details = "Consulting"
         [[params.skills.list.items]]
         details = "Presentations"
         [[params.skills.list.items]]
+        details = "Roadmaps"
+        [[params.skills.list.items]]
+        details = "Strategy"
+        [[params.skills.list.items]]
         details = "C-Level Engagement"
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "Architecture: Enterprise, Solutions, Infrastructure, Integration, Technology, Software."
+        [[params.skills.list.items]]
+        details = "High-level and low-level design of cloud, systems, platforms, services, software, devops, web, mobile, network, testing, operations."
+        [[params.skills.list.items]]
+        details = "Devops, infrastructure as code (IaC), delivery pipelines, CI/CD."
+        [[params.skills.list.items]]
+        details = "Docker, Kubernetes, ECS, Ansible, Terraform, Chef, Puppet, Jenkins, CircleCI, git."
+        [[params.skills.list.items]]
+        details = "Project management, SDLC, agile methodologies and ways of working. Jira, Kanban, Trello, Slack(integration)."
+        [[params.skills.list.items]]
+        details = "Design/Architecture documentation. UML, UML diagrams as code (PlantUML, etc.), Sparx, Visual Paradigm."
+        [[params.skills.list.items]]
+        details = "Data modeling, database design, SQL, NoSQL, graph, document-oriented, JSON, storage, data cache, data streaming, data migration, ETL."
+        [[params.skills.list.items]]
+        details = "API: strategy, design, modeling, management, SDLC, best practice, API First, Swagger, OpenAPI."
+        [[params.skills.list.items]]
+        details = "API Gateway/Management: Apigee, Mulesoft, 3scale, AWS, Kong."
+        [[params.skills.list.items]]
+        details = "Microservices architecure/patterns, API First, REST, event-driven, domain driven."
+        [[params.skills.list.items]]
+        details = "Integration, Enterprise Integration Patterns, messaging, message queues, data streams, ESB."
+        [[params.skills.list.items]]
+        details = "JMS, AMQP, MQ, Kafka, Qpid, RabbitMQ."
+        [[params.skills.list.items]]
+        details = "Big Data, analytics, BI, search, Elasticsearch."
+        [[params.skills.list.items]]
+        details = "Cloud. AWS. Azure. Google Cloud Platform. Hybrid clouds."
+        [[params.skills.list.items]]
+        details = "Lead, architect, design: Java, .NET, web, Node.js, PHP, C++, Javascript, CSS, HTML."
+        [[params.skills.list.items]]
+        details = "Security, identity management, threat detection, directory services, Active Directory, ADFS, SAML, LDAP, OAuth, OpenID Connect, RADIUS, ForgeRock, RSA SecureID, SSL/TLS, certificate management."
+        [[params.skills.list.items]]
+        details = "Non-functional. Operations, support, runtime, monitoring, backup, recovery, key management, availability, reliability, content."
 
         [params.information]
         enable = false
